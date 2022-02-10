@@ -22,17 +22,25 @@ let shuffleOrder = () => {
 
   for (let i in order) {
     let elementColor = createColorElement(order[i]);
-    lightColor(elementColor, Number(i) + 1);
+    lightColor(elementColor, Number(i) + 1, order[i]);
   }
 };
 
 //acende a proxima cor
-let lightColor = (element, number) => {
+let lightColor = (element, number, audioOrder) => {
   number = number * 500;
   setTimeout(() => {
     element.classList.add("selected");
+    if (audioOrder == 0) {
+      audio0.play();
+    } else if (audioOrder == 1) {
+      audio1.play();
+    } else if (audioOrder == 2) {
+      audio2.play();
+    } else if (audioOrder == 3) {
+      audio3.play();
+    }
   }, number - 150);
-
   setTimeout(() => {
     element.classList.remove("selected");
   }, number - 20);
@@ -120,7 +128,12 @@ let playGame = () => {
 let isRunning = false;
 //eventos de clique para as cores
 
-green.onclick = () => (isRunning ? click(0) : null);
-red.onclick = () => (isRunning ? click(1) : null);
-yellow.onclick = () => (isRunning ? click(2) : null);
-blue.onclick = () => (isRunning ? click(3) : null);
+green.onclick = () => (isRunning ? (click(0), audio0.play()) : null);
+red.onclick = () => (isRunning ? (click(1), audio1.play()) : null);
+yellow.onclick = () => (isRunning ? (click(2), audio2.play()) : null);
+blue.onclick = () => (isRunning ? (click(3), audio3.play()) : null);
+
+const audio0 = new Audio("./sounds/1.mp3");
+const audio1 = new Audio("./sounds/2.mp3");
+const audio2 = new Audio("./sounds/3.mp3");
+const audio3 = new Audio("./sounds/4.mp3");
