@@ -16,7 +16,7 @@ body {
   grid-template-areas:
     "verde vermelho"
     "amarelo azul";
-  grid-gap: 10px;
+  grid-gap: 20px;
   border: none;
   border-radius: 100%;
   width: 700px;
@@ -28,6 +28,14 @@ body {
   background-color: #1976d2;
   border-bottom-right-radius: 100%;
   cursor: pointer;
+  box-shadow: 1px 1px 0px #083c70, 2px 2px 0px #083c70, 3px 3px 0px #083c70,
+    4px 4px 0px #083c70, 5px 5px 0px #083c70, 6px 6px 0px #083c70;
+  transition: box-shadow 0.3s;
+}
+.blue:hover {
+  box-shadow: 1px 1px 0px #083c70, 2px 2px 0px #083c70, 3px 3px 0px #083c70,
+    4px 4px 0px #083c70;
+  transform: translate(2px, 2px);
 }
 
 .red {
@@ -35,6 +43,14 @@ body {
   background-color: #c62828;
   border-top-right-radius: 100%;
   cursor: pointer;
+  /* box-shadow: 0 4px 8px 0 rgb(255, 0, 0), 0 6px 20px 0 rgba(173, 5, 5, 0.699); */
+  box-shadow: 1px 1px 0px #8d0e0e, 2px 2px 0px #8d0e0e, 3px 3px 0px #8d0e0e,
+    4px 4px 0px #8d0e0e, 5px 5px 0px #8d0e0e, 6px 6px 0px #8d0e0e;
+}
+.red:hover {
+  box-shadow: 1px 1px 0px #8d0e0e, 2px 2px 0px #8d0e0e, 3px 3px 0px #8d0e0e,
+    4px 4px 0px #8d0e0e;
+  transform: translate(2px, 2px);
 }
 
 .yellow {
@@ -42,6 +58,13 @@ body {
   background-color: #ffa000;
   border-bottom-left-radius: 100%;
   cursor: pointer;
+  box-shadow: 1px 1px 0px #ad7007, 2px 2px 0px #ad7007, 3px 3px 0px #ad7007,
+    4px 4px 0px #ad7007, 5px 5px 0px #ad7007, 6px 6px 0px #ad7007;
+}
+.yellow:hover {
+  box-shadow: 1px 1px 0px #ad7007, 2px 2px 0px #ad7007, 3px 3px 0px #ad7007,
+    4px 4px 0px #ad7007;
+  transform: translate(2px, 2px);
 }
 
 .green {
@@ -49,6 +72,13 @@ body {
   background-color: #66bb6a;
   border-top-left-radius: 100%;
   cursor: pointer;
+  box-shadow: 1px 1px 0px #2d7430, 2px 2px 0px #2d7430, 3px 3px 0px #2d7430,
+    4px 4px 0px #2d7430, 5px 5px 0px #2d7430, 6px 6px 0px #2d7430;
+}
+.green:hover {
+  box-shadow: 1px 1px 0px #2d7430, 2px 2px 0px #2d7430, 3px 3px 0px #2d7430,
+    4px 4px 0px #2d7430;
+  transform: translate(2px, 2px);
 }
 
 .selected {
@@ -70,9 +100,10 @@ body {
 .btn {
   align-items: center;
   background-image: linear-gradient(#3e4042, #25292e);
-  border-radius: 8px;
+  border-radius: 2px;
   border-width: 0;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 0px #4e4e4e, 2px 2px 0px #4e4e4e, 3px 3px 0px #4e4e4e,
+    4px 4px 0px #4e4e4e, 5px 5px 0px #4e4e4e, 6px 6px 0px #4e4e4e;
   cursor: pointer;
   color: #fefefe;
   font-size: 18px;
@@ -85,5 +116,7 @@ body {
 
 .btn:hover {
   opacity: 0.8;
-  box-shadow: 0 5px 10px rgba(255, 255, 195, 0.2), 0 3px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 0px #4e4e4e, 2px 2px 0px #4e4e4e, 3px 3px 0px #4e4e4e,
+    4px 4px 0px #4e4e4e;
+  transform: translate(2px, 2px);
 }
