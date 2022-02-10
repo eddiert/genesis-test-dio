@@ -6,8 +6,9 @@ body {
 .main-game {
   height: 100vh;
   width: 100vw;
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -33,9 +34,8 @@ body {
   transition: box-shadow 0.3s;
 }
 .blue:hover {
-  box-shadow: 1px 1px 0px #083c70, 2px 2px 0px #083c70, 3px 3px 0px #083c70,
-    4px 4px 0px #083c70;
-  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #083c70, 2px 2px 0px #083c70;
+  transform: translate(3px, 3px);
 }
 
 .red {
@@ -48,9 +48,8 @@ body {
     4px 4px 0px #8d0e0e, 5px 5px 0px #8d0e0e, 6px 6px 0px #8d0e0e;
 }
 .red:hover {
-  box-shadow: 1px 1px 0px #8d0e0e, 2px 2px 0px #8d0e0e, 3px 3px 0px #8d0e0e,
-    4px 4px 0px #8d0e0e;
-  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #8d0e0e, 2px 2px 0px #8d0e0e;
+  transform: translate(3px, 3px);
 }
 
 .yellow {
@@ -62,9 +61,8 @@ body {
     4px 4px 0px #ad7007, 5px 5px 0px #ad7007, 6px 6px 0px #ad7007;
 }
 .yellow:hover {
-  box-shadow: 1px 1px 0px #ad7007, 2px 2px 0px #ad7007, 3px 3px 0px #ad7007,
-    4px 4px 0px #ad7007;
-  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #ad7007, 2px 2px 0px #ad7007;
+  transform: translate(3px, 3px);
 }
 
 .green {
@@ -76,9 +74,8 @@ body {
     4px 4px 0px #2d7430, 5px 5px 0px #2d7430, 6px 6px 0px #2d7430;
 }
 .green:hover {
-  box-shadow: 1px 1px 0px #2d7430, 2px 2px 0px #2d7430, 3px 3px 0px #2d7430,
-    4px 4px 0px #2d7430;
-  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #2d7430, 2px 2px 0px #2d7430;
+  transform: translate(3px, 3px);
 }
 
 .selected {
@@ -97,7 +94,10 @@ body {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .btn {
+  margin: 0 10px;
+  width: 10rem;
   align-items: center;
   background-image: linear-gradient(#3e4042, #25292e);
   border-radius: 2px;
@@ -116,7 +116,13 @@ body {
 
 .btn:hover {
   opacity: 0.8;
-  box-shadow: 1px 1px 0px #4e4e4e, 2px 2px 0px #4e4e4e, 3px 3px 0px #4e4e4e,
-    4px 4px 0px #4e4e4e;
-  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #4e4e4e;
+  transform: translate(3px, 3px);
+}
+
+@media (max-width: 768px) {
+  .genius {
+    max-width: 95vw;
+    max-height: 50vh;
+  }
 }
