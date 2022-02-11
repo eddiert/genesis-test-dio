@@ -16,8 +16,8 @@
   - 3D Effect
 - Play audio
 
-### Sreenshot
+## Screenshot
 
-![Screenshot](./assets/screenshot.png | width=512px)
+<img src="https://user-images.githubusercontent.com/64763336/153519295-82cb98e1-d1e9-4656-858b-06efce15d315.png" width="512">
 
 ## 🚀 Let's code! 🚀
