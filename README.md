@@ -1,12 +1,20 @@
-# Oi, tudo bem? Chegou aqui através do curso, certo? 🙃
+# Projeto para Eduzz Fullstack Developer #3
 
-Esse é o repositório da nossa aula de Javascript, na qual vamos fazer um simples jogo Gênesis com apenas algumas linhas de código! 
+## Criando seu jogo de memória estilo Genius
 
-### Os requisitos são:
+[Projeto da Aula](https://github.com/SpruceGabriela/genesis-dio) by @SpruceGabriela
 
-* [HTML básico](https://www.w3schools.com/html/)
-* [CSS básico](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-* [Javascript básico](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+### Melhorias
+
+- Experiência do usuário:
+  - Retirando janela alert de nextLevel e colocando um botão de Play/Reset
+  - Mostrar pontuação em texto
+  - Bloquear botões enquanto está repetindo a sequência
+- Estilo:
+  - Responsividade para tela de mobile
+  - Dark theme
+  - 3D Effect
+- Play audio
  
  ## Screenshot
 <img src="https://user-images.githubusercontent.com/64763336/153519295-82cb98e1-d1e9-4656-858b-06efce15d315.png" width="512">
