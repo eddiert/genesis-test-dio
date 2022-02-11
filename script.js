@@ -67,7 +67,6 @@ let click = (color) => {
     createColorElement(color).classList.remove("selected");
     checkOrder();
   }, 250);
-  console.log("click");
 };
 
 let createColorElement = (color) => {
@@ -85,7 +84,6 @@ let createColorElement = (color) => {
 let nextLevel = () => {
   score++;
   shuffleOrder();
-  console.log("nextlevel");
 };
 
 let gameOver = () => {
@@ -99,7 +97,6 @@ let gameOver = () => {
   clickedOrder = [];
   isRunning = false;
   score = 0;
-  console.log("game over");
 };
 
 let playGame = () => {
@@ -109,12 +106,10 @@ let playGame = () => {
     clickedOrder = [];
     playButton.innerHTML = "PLAY";
     score = 0;
-    console.log("reset");
   } else {
     isRunning = true;
     shuffleOrder();
     playButton.innerHTML = "RESET";
-    console.log("play");
   }
 };
 
