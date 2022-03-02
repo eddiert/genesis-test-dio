@@ -2,7 +2,8 @@
 
 ## Criando seu jogo de memória estilo Genius
 
-[Projeto da Aula](https://github.com/SpruceGabriela/genesis-dio) by @SpruceGabriela
+### Preview
+[https://edmilson-torres.github.io/genesis-test-dio/](https://edmilson-torres.github.io/genesis-test-dio/)
 
 ### Melhorias
 
